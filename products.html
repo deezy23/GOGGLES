@@ -1,0 +1,190 @@
+<!doctype>
+<html>
+	<head>
+	<style>
+	body
+		{
+		
+		}
+		.topphoto
+		{
+		background-image: url("images/goo.png");
+		height: 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:contain ;
+		position: relative;
+		}
+		
+		.column {
+		float: right;
+		  width: 29%;
+		  padding:5px;
+		}
+
+		.card 
+		{
+		 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		 max-width: 300px;
+		 margin: contain;
+		 text-align: center;
+		 font-family: arial;
+		}
+
+		.price 
+			{
+		  color: grey;
+		  font-size: 22px;
+		}
+
+		.card button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  width:100%;
+}
+
+.button :hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button :hover:after {
+  opacity: .5;
+}
+
+.button :active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button :active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .button-65 {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
+		}
+
+		.card button:hover {
+		  opacity: 0.7;
+		}
+	</style>
+		<title>project</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	
+	<body>
+		<div class="header">
+			<img src="images/goo2.png" alt="goggle logo" style="width:20%">
+		</div>
+		
+	<div class="topnav" id="navbar">	
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+				  <a href="index.html">Home</a>
+				  <a href="#contact">Contact Us</a>
+				  <a href="#about us">About us</a>
+				  <a href="products.html">Products</a>
+				</div>
+	
+<div class="content">
+	
+		<div class="topphoto"></div>
+	
+	<div class="column">
+		<div class="card">
+			<img src="images/glasses.png" alt="goggles" style="width:100%; height: 22%">
+			  <h1>goggle glass</h1>
+			  <p class="price">$6,969</p>
+			  <p>Top tier, state of the art glasses with smartphone capabilities.</p>
+			  <p><button>Add to Cart</button></p>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card">
+			<img src="images/glasses2.jpg" alt="goggles" style="width:100%">
+			  <h1>goggles</h1>
+			  <p class="price">$911.01</p>
+			  <p>goggle glasses but with built in projector to project ur vision</p>
+			  <p><button>Add to Cart</button></p>
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="card">
+			<img src="images/gojo.jpg" alt="goggles" style="width:50%">
+			  <h1>circle glass</h1>
+			  <p class="price">$999</p>
+			  <p>goggle but round</p>
+			  <p><button>Add to Cart</button></p>
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="card">
+			<img src="images/yes2.jpg" alt="goggles" style="width:100%">
+			  <h1>yellapu</h1>
+			  <p class="price">$0</p>
+			  <p>smelly indian</p>
+			  <p><button>Add to Cart</button></p>
+		</div>
+	</div>
+	
+</div>
+	<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	</script>
+	
+
+
+	
+	</body>
+</html>
